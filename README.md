@@ -1,5 +1,5 @@
 # WordPress.module.toggle-expose
-Module code for a gallery view, built with the Advanced Custom Fields plugin, jQuery, and Sass.
+Module code for a WordPress gallery, built with the Advanced Custom Fields plugin, jQuery, and Sass.
 
 ## Usage
 The code was developed for use with the [Advanced Custom Fields Gallery field](https://www.advancedcustomfields.com/resources/gallery/). The PHP can be implemented as a [template part](https://developer.wordpress.org/reference/functions/get_template_part/). It loops through the images selected in the ACF field and outputs them as a series of `figure` elements with background images.
