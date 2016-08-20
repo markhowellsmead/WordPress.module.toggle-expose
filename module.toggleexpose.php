@@ -4,11 +4,11 @@
 	function output_images($images, $size, $initially_visible = 0){
 		function imagetag($image, $size, $n){
 			$prefix = '';
-			$class = '';
+			$class = ' class="image"';
 			$button = '';
 			if($n > $initially_visible){
 				$prefix = 'data-';
-		    	$class = ' class="is-hidden"';
+		    	$class = ' class="image is-hidden"';
     		}elseif($n === $initially_visible){
 	    		$button = '<div class="button-holder"><button class="button button-primary toggle-expose">' .__('Show all images'). '</button></div>';
 		    }
