@@ -2,7 +2,7 @@
 
 <?php
 	function output_images($images, $size, $initially_visible = 0){
-		function imagetag($image, $size, $n){
+		function imagetag($image, $size, $n, $initially_visible){
 			$prefix = '';
 			$class = ' class="image"';
 			$button = '';
@@ -24,11 +24,11 @@
 	    $n = 0;
 
 		foreach($images as $image){
-			echo imagetag($image, $size, ++$n);
+			echo imagetag($image, $size, ++$n, $initially_visible);
 		}
 	}
 	
 	$images = array_slice(get_sub_field('images'), 0, intval(get_option('posts_per_page')));
 	output_images($images, 'post-thumbnail-full', 2);
-
+	
 ?></div>
