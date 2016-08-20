@@ -10,7 +10,7 @@
 				$prefix = 'data-';
 		    	$class = ' class="is-hidden"';
     		}elseif($n === $initially_visible){
-	    		$button = '<div class="button-holder"><button class="button button-primary toggle-expose">Expose</button></div>';
+	    		$button = '<div class="button-holder"><button class="button button-primary toggle-expose">' .__('Show all images'). '</button></div>';
 		    }
 			return sprintf(
 				'<figure %1$s %2$sstyle="background-image:url(\'%3$s\')"></figure>%4$s',
