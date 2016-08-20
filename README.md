@@ -6,5 +6,7 @@ The code was developed for use with the [Advanced Custom Fields Gallery field](h
 
 Using the Sass in this repo, the first two images will be shown side by side, followed by a button. Clicking on the button hides it and swaps out the `data-style` attributes on the remaining `figure` elements for a proper `style` attribute, which will then load the referenced images.
 
+Elements would be hidden by use of the state class `is-hidden`, which isn't part of the Sass for this module.
+
 ## Author
 Mark Howells-Mead, permanenttourist.ch, August 2016
